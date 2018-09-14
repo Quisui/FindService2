@@ -1,0 +1,68 @@
+#barra-nav{
+  height: 115px;
+}
+nav{
+  height: 115px;
+  font-size: large;
+  background: #003d8d;
+}
+a.brand-logo{
+  font-weight: bold;
+}
+#div_header{
+  padding-top: 25px;
+}
+#nav_btn{
+  border-radius: 10px;
+}
+#nav_btn:hover{
+  background: rgba(26, 81, 175, 0.76);
+}
+#nav_login{
+  background: #f12d2d;
+  color: #ffffff;
+  border-radius: 10px;
+}
+#nav_login:hover{
+  background: #ffffff;
+  color: #f12d2d;
+}
+a.btn-large:visi{
+  background: #f12d2d;
+  color: #ffffff;
+}
+ul.sidenav li a{
+  font-size: 20px;
+}
+#snav_login{
+  background: #f12d2d;
+  color: #ffffff;
+  border-radius: 10px;
+}
+#snav_login:hover{
+  background: #003d8d;
+  color: #ffffff;
+}
+footer.page-footer{
+  background: #003d8d;
+}
+footer.page-footer div.footer-copyright{
+  background: #f12d2d;
+}
+#findoctor{
+  border-radius: 10px;
+  background: #ffffff;
+  color: #000;
+}
+#login_options{
+  background: #ffffff;
+}
+#login_options div.card-action a{
+  color: #000;
+}
+#sign_up div.card-action a{
+  color: #000;
+}
+#sign_up div.card-action a.btn.green{
+  color: #ffffff;
+}
