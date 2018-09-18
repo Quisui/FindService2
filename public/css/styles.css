@@ -66,3 +66,10 @@ footer.page-footer div.footer-copyright{
 #sign_up div.card-action a.btn.green{
   color: #ffffff;
 }
+#search_bar{
+  background: inherit;
+  border-radius: 10px;
+}
+#label_search{
+  color: black;
+}

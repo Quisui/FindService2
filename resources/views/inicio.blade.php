@@ -1,22 +1,27 @@
 @extends ('plantilla')
+
 @section ('busqueda')
-<div class="container">
+<div>
   <hr>
-  <div class="row">
-    <section class="col s12 center">
-      <h4>
-        En FindService puedes encontrar lo que quieras!
-      </h4>
-    </section>
-    <section class="col s8 offset-s2 center">
-      <form>
-        <div class="input-field">
-          <input id="search_bar" type="search" required>
-          <label class="" for="search_bar"><i class="material-icons left">search</i>Busca servicios como hospitales, restaurantes, tiendas, etc...</label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
-    </section>
+  <div class="parallax-container">
+      <div class="parallax"><img src="imagenes/servicios.png"></div>
+      <div class="row container">
+        <br><br><br><br><br><br><br>
+        <section class="col s12 center">
+          <h4>
+            En FindService puedes encontrar lo que quieras!
+          </h4>
+        </section>
+        <section class="col s8 offset-s2 center">
+          <form>
+            <div class="input-field">
+              <input id="search_bar" type="search" required>
+              <label class="" id="label_search" for="search_bar"><i class="material-icons left">search</i>Busca servicios como hospitales, restaurantes, tiendas, etc...</label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </section>
+      </div>
   </div>
   <hr>
 </div>
@@ -50,7 +55,7 @@
           <div class="caption right-align">
             <h3>Comercio</h3>
             <h5 class="light">En esta categoría encontrarás:
-              Tiendas, Centros Comerciales, Ferreterías, Librerías y más</h5>}
+              Tiendas, Centros Comerciales, Ferreterías, Librerías y más</h5>
             <a class="btn waves-effect white purple-text" href="comercio.html">Ir a Categoría Comercio</a>
           </div>
         </li>

@@ -57,6 +57,12 @@
             <input id="sign_up_birthday" type="text" class="datepicker">
             <label for="sign_up_birthday">Fecha de Nacimiento</label>
           </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var elems = document.querySelectorAll('.datepicker');
+              var instances = M.Datepicker.init(elems);
+            });
+          </script>
         </div>
         <!--Boton de registro-->
         <div class="row">
@@ -81,4 +87,6 @@
       </div>
     </div>
   </div>
+
+
 @endsection

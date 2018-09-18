@@ -11,14 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('inicio');
-})->name('home');
+Route::get('/','PagesController@inicio')->name('home');
 
-Route::get('login', function() {
-    return view('login');
-})->name('login');
+Route::get('login','PagesController@login')->name('login');
 
-Route::get('signup', function() {
-    return view('signup');
-})->name('signup');
+Route::get('signup','PagesController@singup')->name('signup');
