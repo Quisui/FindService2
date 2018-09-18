@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Find Service Xela</title>
-    <link rel="shortcut icon" href="imagenes/l3-ico.ico"/>
+    <link rel="shortcut icon" href="imagenes/l2.ico"/>
   </head>
 
   <body>
@@ -27,7 +27,6 @@
               <li><a href="#" id="nav_btn" class="waves-effect waves-light">Historial</a></li>
               <li><a href="#" id="nav_btn" class="waves-effect waves-light">Blog</a></li>
               <li><a href="{{ route('login') }}" id="nav_login" class="btn-large waves-effect waves-red">Inicio de Sesión</a></li>
-              <li><a href="{{ route('signup') }}" class="waves-effect waves-teal btn-flat">Resgistrarse</a></li>
             </ul>
           </div>
         </nav>
@@ -90,14 +89,12 @@
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
       });
-    </script>
-    <script>
+
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.parallax');
         var instances = M.Parallax.init(elems);
       });
-    </script>
-    <script>
+
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
         var instances = M.Slider.init(elems,{

@@ -33,8 +33,8 @@
               <span class="card-title">Opciones de Inicio de Sesión</span>
             </div>
             <div class="card-action center">
-              <a href="#" class="btn-flat waves-effect waves-red"><img class="left" src="imagenes/Google.png" alt="Google" height="30px">Google</a>
-              <a href="#" class="btn-flat waves-effect waves-red"><img class="left" src="imagenes/Facebook.png" alt="Facebook" height="30px">Facebook</a>
+              <a href="#" class="black-text btn-flat waves-effect waves-red"><img class="left" src="imagenes/Google.png" alt="Google" height="30px">Google</a>
+              <a href="#" class="black-text btn-flat waves-effect waves-red"><img class="left" src="imagenes/Facebook.png" alt="Facebook" height="30px">Facebook</a>
             </div>
           </div>
           <br>

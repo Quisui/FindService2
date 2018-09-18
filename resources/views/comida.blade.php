@@ -1,30 +1,30 @@
 @extends ('plantilla')
 
 @section ('busqueda')
-<div>
-  <hr>
-  <div class="parallax-container">
-      <div class="parallax"><img src="imagenes/servicios.png"></div>
-      <br><br><br><br><br><br><br>
-      <div id="search_div_inicio" class="row container">
-        <section class="col s12 center white-text">
-          <h4>
-            En FindService puedes encontrar lo que quieras!
-          </h4>
-        </section>
-        <section class="col s8 offset-s2 center">
-          <form>
-            <div class="input-field">
-              <input id="search_bar" type="search" required>
-              <label class="" id="label_search" for="search_bar"><i class="material-icons left">search</i>Busca servicios como hospitales, restaurantes, tiendas, etc...</label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </section>
-      </div>
+  <div>
+    <hr>
+    <div class="parallax-container">
+        <div class="parallax"><img class="responsive-image" src="imagenes/Comida.jpg"></div>
+        <br><br><br><br><br><br><br>
+        <div id="search_div_comida" class="row container">
+          <section class="col s12 center white-text">
+            <h4>
+              En la categoría comida puedes encontrar Restaurantes, Cafeterías, Comedores y más!
+            </h4>
+          </section>
+          <section class="col s8 offset-s2 center">
+            <form>
+              <div class="input-field">
+                <input id="search_bar" type="search" required>
+                <label class="" id="label_search" for="search_bar"><i class="material-icons left">search</i>Buscar servicio</label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </section>
+        </div>
+    </div>
+    <hr>
   </div>
-  <hr>
-</div>
 @endsection
 
 @section('contenido')

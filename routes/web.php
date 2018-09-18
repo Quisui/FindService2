@@ -16,3 +16,11 @@ Route::get('/','PagesController@inicio')->name('home');
 Route::get('login','PagesController@login')->name('login');
 
 Route::get('signup','PagesController@singup')->name('signup');
+
+Route::get('comida', function() {
+    return view('comida');
+})->name('cat_comida');
+
+Route::get('salud', function() {
+    return view('salud');
+})->name('cat_salud');

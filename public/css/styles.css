@@ -27,10 +27,6 @@ a.brand-logo{
   background: #ffffff;
   color: #f12d2d;
 }
-a.btn-large:visi{
-  background: #f12d2d;
-  color: #ffffff;
-}
 ul.sidenav li a{
   font-size: 20px;
 }
@@ -57,9 +53,6 @@ footer.page-footer div.footer-copyright{
 #login_options{
   background: #ffffff;
 }
-#login_options div.card-action a{
-  color: #000;
-}
 #sign_up div.card-action a{
   color: #000;
 }
@@ -71,5 +64,17 @@ footer.page-footer div.footer-copyright{
   border-radius: 10px;
 }
 #label_search{
-  color: black;
+  color: white;
+}
+#search_div_inicio{
+  border-radius: 10px;
+  background: rgba(31, 71, 139, 0.5);
+}
+#search_div_comida{
+  border-radius: 10px;
+  background: rgba(255, 109, 0, 0.5);
+}
+#search_div_salud{
+  border-radius: 10px;
+  background: rgba(76, 175, 80, 0.5);
 }

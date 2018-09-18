@@ -60,7 +60,11 @@
           <script>
             document.addEventListener('DOMContentLoaded', function() {
               var elems = document.querySelectorAll('.datepicker');
-              var instances = M.Datepicker.init(elems);
+              var instances = M.Datepicker.init(elems, {
+                autoClose: true,
+                format: 'dd-mmmm-yyyy',
+                yearRange: 50
+              });
             });
           </script>
         </div>
