@@ -2,19 +2,19 @@
 @section('contenido')
     <div class="container">
       <div class="row">
-        <form class="col s6 l7">
+        <form id="login_form" class="col s6 l7">
           <br>
           <br>
           <br>
           <div class="row">
             <div class="input-field col s12">
-              <input id="login_email" type="text" class="validate">
+              <input id="login_email" name ="login_email" type="text" class="validate">
               <label for="login_email">Correo o Nombre de Usuario</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="login_password" type="password" class="validate">
+              <input id="login_password" name="login_password" type="password" class="validate">
               <label for="login_password">Contraseña</label>
             </div>
           </div>

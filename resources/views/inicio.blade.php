@@ -81,4 +81,19 @@
     </div>
   </div>
 </div>
+
+<div class="row container">
+  <div class="col s12 l10 offset-l1">
+    <table class="highlight centered responsive-table">
+          @foreach ($categorias as $cat)
+          <tr>
+            <td>{{ $cat-> idcategoria}}</td>
+            <td>{{ $cat-> nombre}}</td>
+          </tr>
+          @endforeach
+    </table>
+    {{$categorias->render()}}
+  </div>
+  <!---->
+</div>
 @endsection

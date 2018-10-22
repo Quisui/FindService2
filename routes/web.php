@@ -1,4 +1,4 @@
-<?php
+.<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +17,8 @@ Route::get('login','PagesController@login')->name('login');
 
 Route::get('signup','PagesController@singup')->name('signup');
 
-Route::get('comida', function() {
-    return view('comida');
-})->name('cat_comida');
+Route::get('comida','PagesController@cat_comida')->name('cat_comida');
 
-Route::get('salud', function() {
-    return view('salud');
-})->name('cat_salud');
+Route::get('salud','PagesController@cat_salud')->name('cat_salud');
+
+Route::resource('prueba','PagesController');

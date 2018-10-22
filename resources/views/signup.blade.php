@@ -2,15 +2,27 @@
 @section('contenido')
   <div class="container">
     <div class="row">
-      <form class="col s6 l7">
+      <!--<form id="singup_form" class="col s6 l7">-->
+        @if (count($errors)>0)
+        <div class="">
+          <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{$error}}</li>
+            @endforeach
+          </ul>
+        </div>
+        @endif
+
+        {!!Form::open(array('url'=>'prueba','method'=>'POST','autocomplete'=>'off'))!!}
+        {{Form::token()}}
         <!--Nombre y Apellido-->
         <div class="row">
           <div class="input-field col s12 l6">
-            <input id="sign_up_name" type="text" class="validate">
+            <input id="sign_up_name" name="nombre" type="text" class="validate">
             <label for="sign_up_name">Nombre</label>
           </div>
           <div class="input-field col s12 l6">
-            <input id="sign_up_last_name" type="text" class="validate">
+            <input id="sign_up_last_name" name="apellido" type="text" class="validate">
             <label for="sign_up_last_name">Apellido</label>
           </div>
         </div>
@@ -18,7 +30,7 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">person</i>
-            <input id="sign_up_nickname" type="text" class="validate">
+            <input id="sign_up_nickname" name="nombre_usuario" type="text" class="validate">
             <label for="sign_up_nickname">Nombre de Usuario</label>
           </div>
         </div>
@@ -26,12 +38,12 @@
         <div class="row">
           <div class="input-field col s12 m7">
             <i class="material-icons prefix">alternate_email</i>
-            <input id="sign_up_email" type="text" class="validate">
+            <input id="sign_up_email" name="correo" type="text" class="validate">
             <label for="sign_up_email">Correo</label>
           </div>
           <div class="input-field col s12 m5">
             <i class="material-icons prefix">phone</i>
-            <input id="sign_up_phone" type="text" class="validate">
+            <input id="sign_up_phone" name="numero_telefono" type="text" class="validate">
             <label for="sign_up_phone">Numero de Teléfono</label>
           </div>
         </div>
@@ -39,7 +51,7 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">vpn_key</i>
-            <input id="sign_up_password" type="password" class="validate">
+            <input id="sign_up_password" name="contraseña" type="password" class="validate">
             <label for="sign_up_password">Contraseña</label>
           </div>
         </div>
@@ -54,7 +66,7 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">date_range</i>
-            <input id="sign_up_birthday" type="text" class="datepicker">
+            <input id="sign_up_birthday" name="fecha_nacimiento" type="text" class="datepicker">
             <label for="sign_up_birthday">Fecha de Nacimiento</label>
           </div>
           <script>
@@ -62,7 +74,7 @@
               var elems = document.querySelectorAll('.datepicker');
               var instances = M.Datepicker.init(elems, {
                 autoClose: true,
-                format: 'dd-mmmm-yyyy',
+                format: 'yyyy-mm-dd',
                 yearRange: 50
               });
             });
@@ -71,10 +83,11 @@
         <!--Boton de registro-->
         <div class="row">
           <div class="col s6 offset-s3 offset-l4">
-            <button type="button" class="btn-large green" name="button">Registrarme</button>
+            <button type="submit" class="btn-large green" name="button">Registrarme</button>
           </div>
         </div>
-      </form>
+        {!!Form::close()!!}
+      <!--</form>-->
 
       <!-- Cuadro de opciones de registro -->
       <div class="col s6 l4 offset-l1">
