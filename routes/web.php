@@ -21,4 +21,8 @@ Route::get('comida','PagesController@cat_comida')->name('cat_comida');
 
 Route::get('salud','PagesController@cat_salud')->name('cat_salud');
 
+Route::get('servicio', function() {
+    return view('Servicio');
+})->name('service');
+
 Route::resource('prueba','PagesController');

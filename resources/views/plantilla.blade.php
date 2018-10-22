@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Find Service Xela</title>
     <link rel="shortcut icon" href="imagenes/l2.ico"/>
+    @yield('head')
   </head>
 
   <body>
@@ -84,6 +85,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
@@ -102,5 +104,6 @@
         });
       });
     </script>
+    @yield('scripts')
   </body>
 </html>
