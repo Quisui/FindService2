@@ -2,6 +2,7 @@
 @section('contenido')
   <div class="container">
     <div class="row">
+      <br><br><br><br><br>
       <!--<form id="singup_form" class="col s6 l7">-->
         @if (count($errors)>0)
         <div class="">
@@ -12,19 +13,18 @@
           </ul>
         </div>
         @endif
+
         <div class="col s6 l7">
           {!!Form::open(array('url'=>'prueba','method'=>'POST','autocomplete'=>'off'))!!}
           {{Form::token()}}
           <!--Nombre y Apellido-->
           <div class="row">
             <div class="input-field col s12 l6">
-              <<<<<<< HEAD
-              <input id="sign_up_name" name="nombre" type="text" class="validate" required>
+              <input id="sign_up_name" name="nombre" type="text" class="validate">
               <label for="sign_up_name">Nombre</label>
             </div>
             <div class="input-field col s12 l6">
-              <input id="sign_up_last_name" name="apellido" type="text" class="validate" required>
-              >>>>>>> Mariano
+              <input id="sign_up_last_name" name="apellido" type="text" class="validate">
               <label for="sign_up_last_name">Apellido</label>
             </div>
           </div>
@@ -40,8 +40,7 @@
           <div class="row">
             <div class="input-field col s12 m7">
               <i class="material-icons prefix">alternate_email</i>
-              <<<<<<< HEAD
-              <input id="sign_up_email" name="correo" type="text" class="validate" required>
+              <input id="sign_up_email" name="correo" type="text" class="validate">
               <label for="sign_up_email">Correo</label>
             </div>
             <div class="input-field col s12 m5">
@@ -54,15 +53,14 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">vpn_key</i>
-              <<<<<<< HEAD
-              <input id="sign_up_password" name="contraseña" type="password" class="validate" required>
+              <input id="sign_up_password" name="contraseña" type="password" class="validate">
               <label for="sign_up_password">Contraseña</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">vpn_key</i>
-              <input id="sign_up_confirm_password" type="password" class="validate" required>
+              <input id="sign_up_confirm_password" type="password" class="validate">
               <label for="sign_up_confirm_password">Confirma tu Contraseña</label>
             </div>
           </div>
@@ -84,16 +82,15 @@
               });
             </script>
           </div>
-
-        </div>
-        <!--Boton de registro-->
-        <div class="row">
-          <div class="col s6 offset-s3 offset-l4">
-            <button type="submit" class="btn-large green" name="button">Registrarme</button>
+          <!--Boton de registro-->
+          <div class="row">
+            <div class="col s6 offset-s3 offset-l4">
+              <button type="submit" class="btn-large green" name="button">Registrarme</button>
+            </div>
           </div>
+          {!!Form::close()!!}
+          <!--</form>-->
         </div>
-        {!!Form::close()!!}
-      <!--</form>-->
 
       <!-- Cuadro de opciones de registro -->
       <div class="col s6 l4 offset-l1">
