@@ -34,7 +34,7 @@
                 <ul id='nav_dropdown' class='dropdown-content'>
                   <li><a id="sesion_dropdown" href="{{ route('login') }}">Iniciar Sesión</a></li>
                   <li><a id="sesion_dropdown" href="{{ route('signup') }}">Crear Usuario</a></li>
-                  <li><a id="sesion_dropdown" href="#!">Registrar Servicio</a></li>
+                  <li><a id="sesion_dropdown" href="{{ route('sservice') }}">Registrar Servicio</a></li>
                 </ul>
               </li>
             </ul>
