@@ -32,4 +32,8 @@ Route::get('servicio', function() {
     return view('Servicio');
 })->name('service');
 
+Route::get('signService', function() {
+    return view('signUpService');
+})->name('sservice');
+
 Route::resource('prueba','PagesController');
