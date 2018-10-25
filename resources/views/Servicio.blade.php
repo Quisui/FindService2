@@ -45,6 +45,16 @@
       <div class="col s7 xl6">
           <div class="card">
               <div class="card-image">
+              <div class="fixed-action-btn" style="position: absolute; height: 01px;">
+                      &nbsp;
+                    <p class="blue-text text-darken-4">Puntua aquí</p>
+                      <a class="btn-floating pulse halfway-fab waves-effect waves-light blue darken-4"><i class="material-icons">grade</i></a>
+                      <ul>
+                          <li><a onclick="alert('¡A puntuado como excelente este servicio!');" class="btn-floating light-green darken-4"><i class="material-icons">sentiment_very_satisfied</i></a></li>
+                          <li><a onclick="alert('¡A puntuado como regular este servicio!');" class="btn-floating amber darken-4"><i class="material-icons">sentiment_dissatisfied</i></a></li>
+                          <li><a onclick="alert('¡A puntuado como muy malo este servicio!');" class="btn-floating red accent-4"><i class="material-icons">sentiment_very_dissatisfied</i></a></li>
+                          </ul>
+                </div>
                   <img src="imagenes\pruebaServicio\logo.png">
               </div>
                 <div class="card-content blue-text text-darken-4">
@@ -121,8 +131,56 @@
                         <a onclick="init_map('gmap_canvas', '2')" class="btn-small blue darken-4 waves-effect waves-light"><i class="material-icons center">directions_walk</i></a>
                       </p>  
                       <div id="gmap_canvas" style="width: 525px; height: 380px;">
-                          Aqui va el puto mapa
                       </div>
+                      <div>&nbsp;
+                        <br>
+                        <strong style="font-weight: bold" class="blue-text text-darken-4">¿Que te parecio este servicio? Comentalo pulsando aquí<strong>
+                        <a class="btn-small blue darken-4 waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons center">comment</i></a>
+                        <div id="modal1" class="modal">
+                          <div class="modal-content">
+                            <h4>Comentario</h4>&nbsp;
+                            <div class="row">
+                                <form class="col s12">
+                                  <div class="row">
+                                    <div class="input-field col s6">
+                                      <strong style="font-weight: bold" class="blue-text text-darken-4">Título: <strong>
+                                      <input id="input_text" type="text" data-length="50">
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                      <strong style="font-weight: bold" class="blue-text text-darken-4">Comentario: <strong>
+                                      <textarea id="textarea2" class="materialize-textarea" data-length="200"></textarea>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div>
+                                  <strong style="font-weight: bold" class="blue-text text-darken-4">Adjuntar fotografias<strong>
+                                  <form action="#">
+                                      <div class="file-field input-field">
+                                        <div class="btn">
+                                          <span></span><i class="material-icons">add_a_photo</i>
+                                          <input type="file" name="adjunto" accept=".jpg, .png" multiple>
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                          <input class="file-path validate" type="text" placeholder="">
+                                        </div>
+                                      </div>
+                                    </form>
+                              </div>
+                    
+                              <div class="row">
+                                  <div class="col s6 offset-s3 offset-l4">
+                                    <button type="button" class="btn blue darken-4" name="button">Enviar Comentario</button>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
+                          </div>
+                        </div>
+            </div>
             </div>
         </div>
 
@@ -257,4 +315,19 @@
     M.AutoInit();
   });
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left',
+      hoverEnabled: false
+    });
+  });
+  </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, options);
+    });
+  </script>
 @endsection
