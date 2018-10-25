@@ -16,6 +16,9 @@ Route::get('/','PagesController@inicio')->name('home');
 Route::get('login','PagesController@login')->name('login');
 
 Route::get('signup','PagesController@singup')->name('signup');
+Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\RegisterController@handleProviderCallback');
+
 
 Route::get('comida','PagesController@cat_comida')->name('cat_comida');
 

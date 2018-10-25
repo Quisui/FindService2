@@ -34,5 +34,17 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'facebook' => [
+      'client_id' => env('1453046691465503'),
+      'client_secret' => env('168c8de7a0da68a6ef9bb7246bd1ecdd'),
+      'redirect' => env('https://www.facebook.com/v3.2/dialog/oauth?'),
+    ],
+
+    'google' => [
+      'client_id' => '741019014414-uvebklkig3suit79elpe6grgdcsbetrf.apps.googleusercontent.com',         // Your GitHub Client ID
+      'client_secret' => 'Pr51YYeN9dg1cuctmtcL7tSb', // Your GitHub Client Secret
+      'redirect' => 'http://localhost:8000/auth/google/callback',
+    ],
+    
 
 ];
