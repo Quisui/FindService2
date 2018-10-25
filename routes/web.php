@@ -19,7 +19,11 @@ Route::get('signup','PagesController@singup')->name('signup');
 
 Route::get('comida','PagesController@cat_comida')->name('cat_comida');
 
-Route::get('salud','PagesController@cat_salud')->name('cat_salud');
+//Route::get('salud','PagesController@cat_salud')->name('cat_salud');
+
+Route::get('salud', function() {
+    return view('CategoriaSalud');
+})->name('cat_salud');
 
 Route::get('servicio', function() {
     return view('Servicio');
