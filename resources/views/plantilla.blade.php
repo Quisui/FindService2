@@ -29,7 +29,7 @@
               <li><a href="#" id="nav_btn" class="waves-effect waves-light">Blog</a></li>
               <li>
                 <a href="#" id="nav_login" class="dropdown-trigger btn-large waves-effect waves-red" data-target='nav_dropdown'>
-                  <!--i class="large material-icons">expand_more</i-->Sesión
+                  <i class="large material-icons right">expand_more</i>Sesión
                 </a>
                 <ul id='nav_dropdown' class='dropdown-content'>
                   <li><a id="sesion_dropdown" href="{{ route('login') }}">Iniciar Sesión</a></li>
@@ -120,6 +120,11 @@
         var instances = M.Slider.init(elems,{
           interval:5000
         });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
       });
     </script>
     @yield('scripts')
