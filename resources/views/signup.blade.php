@@ -42,8 +42,6 @@
               <i class="material-icons prefix">alternate_email</i>
               <<<<<<< HEAD
               <input id="sign_up_email" name="correo" type="text" class="validate" required>
-              =======
-              >>>>>>> Mariano
               <label for="sign_up_email">Correo</label>
             </div>
             <div class="input-field col s12 m5">
@@ -58,8 +56,6 @@
               <i class="material-icons prefix">vpn_key</i>
               <<<<<<< HEAD
               <input id="sign_up_password" name="contraseña" type="password" class="validate" required>
-              =======
-              >>>>>>> Mariano
               <label for="sign_up_password">Contraseña</label>
             </div>
           </div>
