@@ -97,7 +97,7 @@
             <span class="card-title">También puedes registrarte usando:</span>
           </div>
           <div class="card-action center">
-            <a href="#" class="btn-flat waves-effect waves-red"><img class="left" src="imagenes/Google.png" alt="Google" height="30px">Google</a>
+            <a href="{{url('/auth/google')}}" class="btn-flat waves-effect waves-red"><img class="left" src="imagenes/Google.png" alt="Google" height="30px">Google</a>
             <a href="#" class="btn-flat waves-effect waves-red"><img class="left" src="imagenes/Facebook.png" alt="Facebook" height="30px">Facebook</a>
           </div>
         </div>
