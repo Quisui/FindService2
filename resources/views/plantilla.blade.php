@@ -29,7 +29,7 @@
               <li><a href="#" id="nav_btn" class="waves-effect waves-light">Blog</a></li>
               <li>
                 <a href="#" id="nav_login" class="dropdown-trigger btn-large waves-effect waves-red" data-target='nav_dropdown'>
-                  <!--i class="large material-icons">expand_more</i-->Sesión
+                  <i class="large material-icons right">expand_more</i>Sesión
                 </a>
                 <ul id='nav_dropdown' class='dropdown-content'>
                   <li><a id="sesion_dropdown" href="{{ route('login') }}">Iniciar Sesión</a></li>
@@ -48,6 +48,16 @@
           <span id="logo_menu">
             <a href="{{ route('home') }}"><img src="imagenes/l4.png" alt="Logo" height="75px"></a>
           </span>
+        </li>
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="imagenes/Comida.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="imagenes/l2.png"></a>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+          </div>
         </li>
         <li><a href="#" id="snav_btn" class="waves-effect waves-light">Servicios</a></li>
         <li><a href="#" id="snav_btn" class="waves-effect waves-light">Historial</a></li>

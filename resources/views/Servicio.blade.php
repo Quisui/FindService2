@@ -41,7 +41,7 @@
           <li><img src="imagenes/pruebaServicio/4.png" alt="" class="responsive-img"></li>
         </ul>
       </div>
-      
+
       <div class="col s7 xl6">
           <div class="card">
               <div class="card-image">
@@ -124,12 +124,12 @@
                           <input id="direccionB_mapa" type="text" class="validate">
                           <label for="direccionB_mapa">Direccion B</label>
                         </div>
-                      </div>     
+                      </div>
                       <p>
                         <a class="blue-text text-darken-4">¿Como llegar?<br></a>
                         <a onclick="init_map('gmap_canvas', '1')" class="btn-small blue darken-4 waves-effect waves-light"><i class="material-icons center">directions_car</i></a>
                         <a onclick="init_map('gmap_canvas', '2')" class="btn-small blue darken-4 waves-effect waves-light"><i class="material-icons center">directions_walk</i></a>
-                      </p>  
+                      </p>
                       <div id="gmap_canvas" style="width: 525px; height: 380px;">
                       </div>
                       <div>&nbsp;
@@ -169,7 +169,7 @@
                                       </div>
                                     </form>
                               </div>
-                    
+
                               <div class="row">
                                   <div class="col s6 offset-s3 offset-l4">
                                     <button type="button" class="btn blue darken-4" name="button">Enviar Comentario</button>
@@ -189,10 +189,10 @@
   </div>
 </div>
 @endsection
-  
+
 @section('scripts')
 <!-- Mapa -->
-<script type='text/javascript'>  
+<script type='text/javascript'>
   var tipo = "google.maps.TravelMode."
   //Ubicación o direccion que escoja la persona
   var direccionA = "Zona 7, Quetzaltenango";
@@ -205,16 +205,16 @@
   //Funcion para convertir una direccion a coordenadas para google maps
   function codeAddress(address) {
       geocoder = new google.maps.Geocoder();
-          geocoder.geocode( {address:address}, function(results, status) 
+          geocoder.geocode( {address:address}, function(results, status)
           {
-              if (status == google.maps.GeocoderStatus.OK) 
+              if (status == google.maps.GeocoderStatus.OK)
               {
               convertir_Direccion = results[0].geometry.location;
               } else {
               alert('Geocode was not successful for the following reason: ' + status);
           }
           });
-  } 
+  }
   // Funcion que marta el origen
   function init_map1(cadena) {
     //Posiciona y construye el mapa para la direccion del servicio
@@ -282,13 +282,13 @@
           polylineOptions: { strokeColor: "#fffa00" }
       }
       var directionsService = new google.maps.DirectionsService;
-      var directionsDisplay = new google.maps.DirectionsRenderer(objConfigDR);        
+      var directionsDisplay = new google.maps.DirectionsRenderer(objConfigDR);
       directionsService.route({
       origin: direccionA,//db waypoint start
       destination: direccionB,//db waypoint end
       travelMode: tipoMov //google.maps.TravelMode.DRIVING
-      }, 
-      
+      },
+
       function trazar(response, status) {
       if (status === google.maps.DirectionsStatus.OK) {
           directionsDisplay.setDirections(response);
@@ -310,19 +310,24 @@
         });
     });
 </script-->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    M.AutoInit();
-  });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'left',
-      hoverEnabled: false
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('input#input_text, textarea#textarea2').characterCounter();
     });
-  });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems, {
+        direction: 'left',
+        hoverEnabled: false
+      });
+    });
   </script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
