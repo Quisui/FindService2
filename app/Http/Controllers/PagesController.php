@@ -28,7 +28,7 @@ class PagesController extends Controller
       $usuario->nombre=$request->get('nombre');
       $usuario->Apellido=$request->get('apellido');
       $usuario->nickname=$request->get('nombre_usuario');
-      $usuario->contraseña=bcrypt($request->get('contraseña'));
+      $usuario->password=bcrypt($request->get('contraseña'));
       $usuario->correo=$request->get('correo');
       $usuario->celular=$request->get('numero_telefono');
       $usuario->fechaNacimiento=$request->get('fecha_nacimiento');
