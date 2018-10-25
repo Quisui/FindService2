@@ -18,6 +18,32 @@ a.brand-logo{
 #nav_btn:hover{
   background: rgba(26, 81, 175, 0.76);
 }
+#nav_btn_sesion{
+  background: #f12d2d;
+  color: #ffffff;
+  border-color: #f12d2d;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#nav_btn_sesion:hover{
+  background: #ffffff;
+  color: #f12d2d;
+  border-color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#sesion_dropdown{
+  background: #f12d2d;
+  color: #ffffff;
+  font-weight: bold;
+}
+#sesion_dropdown:hover{
+  background: #ffffff;
+  color: #f12d2d;
+}
+#nav_dropdown{
+  border-radius: 10px;
+}
 #nav_login{
   background: #f12d2d;
   color: #ffffff;
