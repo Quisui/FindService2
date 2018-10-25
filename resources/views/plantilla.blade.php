@@ -27,7 +27,16 @@
               <li><a href="#" id="nav_btn" class="waves-effect waves-light">Servicios</a></li>
               <li><a href="#" id="nav_btn" class="waves-effect waves-light">Historial</a></li>
               <li><a href="#" id="nav_btn" class="waves-effect waves-light">Blog</a></li>
-              <li><a href="{{ route('login') }}" id="nav_login" class="btn-large waves-effect waves-red">Inicio de Sesión</a></li>
+              <li>
+                <a href="#" id="nav_login" class="dropdown-trigger btn-large waves-effect waves-red" data-target='nav_dropdown'>
+                  <!--i class="large material-icons">expand_more</i-->Sesión
+                </a>
+                <ul id='nav_dropdown' class='dropdown-content'>
+                  <li><a id="sesion_dropdown" href="{{ route('login') }}">Iniciar Sesión</a></li>
+                  <li><a id="sesion_dropdown" href="{{ route('signup') }}">Crear Usuario</a></li>
+                  <li><a id="sesion_dropdown" href="#!">Registrar Servicio</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>
@@ -43,7 +52,16 @@
         <li><a href="#" id="snav_btn" class="waves-effect waves-light">Servicios</a></li>
         <li><a href="#" id="snav_btn" class="waves-effect waves-light">Historial</a></li>
         <li><a href="#" id="snav_btn" class="waves-effect waves-light">Blog</a></li>
-        <li><a href="{{ route('login') }}" id="snav_login" class="btn-large waves-effect waves-red">Inicio de Sesión</a></li>
+        <li>
+          <a href="#" id="nav_login" class="dropdown-trigger btn-large waves-effect waves-red" data-target='snav_dropdown'>
+          Ingresa
+          </a>
+          <ul id='snav_dropdown' class='dropdown-content'>
+            <li><a id="sesion_dropdown" href="{{ route('login') }}">Iniciar Sesión</a></li>
+            <li><a id="sesion_dropdown" href="{{ route('signup') }}">Crear Usuario</a></li>
+            <li><a id="sesion_dropdown" href="#!">Registrar Servicio</a></li>
+          </ul>
+        </li>
       </ul>
     </header>
 
