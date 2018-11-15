@@ -52,6 +52,7 @@ return [
             'prefix' => '',
             'strict' => false,
             'engine' => null,
+            'unix_socket' => getenv('UNIX_SOCKET')
         ],
 
         'pgsql' => [
@@ -65,7 +66,6 @@ return [
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
-            'unix_socket' => getenv('UNIX_SOCKET')
         ],
 
         'sqlsrv' => [
