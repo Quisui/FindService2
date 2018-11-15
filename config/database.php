@@ -65,7 +65,7 @@ return [
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
-            'unix_socket' => getenv('UNIX_SOCKET');
+            'unix_socket' => getenv('UNIX_SOCKET')
         ],
 
         'sqlsrv' => [
